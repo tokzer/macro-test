@@ -29,6 +29,7 @@ jobs:
                 mkdir -p ./deploy
                 cp ./target/wasm32-unknown-unknown/release/macro-test.wasm ./deploy/
                 cp index.html ./deploy/
+                cp game.html ./deploy/
                 cp mq_js_bundle.js ./deploy/
 
             - name: Deploy
