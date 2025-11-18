@@ -26,11 +26,10 @@ jobs:
             
             - name: Prepare Deployment Directory
               run: |
-                mkdir -p ./deploy/assets
+                mkdir -p ./deploy
                 cp ./target/wasm32-unknown-unknown/release/macro-test.wasm ./deploy/
                 cp index.html ./deploy/
                 cp mq_js_bundle.js ./deploy/
-                cp -r assets/ ./deploy/
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
